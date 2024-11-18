@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Login Form Modifier - Patched",
+    "version": "1.0",
+    "description": "Removes submit Button from form and adds a red button to a login form with the ID 'loginForm'.",
+    "permissions": [],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_start"
+      }
+    ]
+  }
+  
