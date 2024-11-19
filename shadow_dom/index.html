@@ -1,0 +1,15 @@
+<div id="shadowContainer">
+
+</div>
+<span id="noShadow">Not in shadow DOM</span>
+
+<script>
+    const container = document.getElementById("shadowContainer");
+    const shadow = container.attachShadow({mode: "open"});
+    const span = document.createElement("span");
+
+    span.textContent = "In shadow DOM";
+    span.id = "shadow";
+
+    shadow.appendChild(span);
+</script>
